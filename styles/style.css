@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
 * {
-    font-family: "Source Code Pro", monospace;
+    font-family: "Nunito", monospace;
+    font-weight: 500;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -17,6 +20,7 @@
 a {
     color: #fff;
     text-decoration: none;
+    padding-right: 4px;
 }
 
 p {
@@ -25,8 +29,13 @@ p {
 
 .bold {
     font-weight: 800;
+    font-size: 14px;
 }
 
+/* ONLY STARBUCK */
+a:hover {
+    background-color: #039145;
+}
 
 .header-container {
     background-color: var(--light-color);
@@ -60,6 +69,7 @@ p {
 
 .store-location span {
     color: var(--main-color);
+    font-size: 16px;
     /* margin: auto; */
     /* background-color: crimson; */
 }
@@ -105,28 +115,45 @@ p {
     background: url("../assets/imgs/pattern_stars.png");
     background-position: 50%;
     background-size: 10%;
-    min-height: 100px;
+    /* min-height: 100px; */
 }
 
 .megaNav .container .fields {
     color: #fff;
     display: flex;
+    flex-direction: row;
 }
 
 .menu_content {
     background-color: var(--dark-color);
-    flex: 4;
+    flex: 5;
 }
 
 .menu_content a {
     color: #fff
 }
 
+.menu_content .nav-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-left: 40px;
+}
+
+.menu_content .nav-blocks > li a {
+    font-size: 12px;
+}
+
+.menu_content .nav-blocks > li a.bold {
+    font-size: 14px;
+}
+
 .menu_promo {
     /* background-color: salmon; */
     padding: 24px;
     flex: 1;
-    height: 300px
+    /* height: 300px */
+    padding-bottom: 40px;
 }
 
 .menu_promo .promo-clickable {
@@ -135,6 +162,6 @@ p {
     width: 60%;
 }
 
-.menu_promo .promo-clickable {
-    
+.menu_promo .promo-clickable p {
+
 }
