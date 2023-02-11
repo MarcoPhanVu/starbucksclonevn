@@ -6,16 +6,27 @@
     list-style-type: none;
 }
 
+:root {
+    --main-color: #006341;
+    --dark-color: #1e1e1e;
+    --dark-pale: #242221;
+    --light-color: #f8f8f8;
+}
+
+/* COMMONS */
 a {
-    color: rgb(247, 200, 113);
+    color: #fff;
     text-decoration: none;
 }
 
-:root {
-    --main-color: #006341;
-    --dark-color: #242221;
-    --light-color: #f8f8f8;
+p {
+    font-weight: 500;
 }
+
+.bold {
+    font-weight: 800;
+}
+
 
 .header-container {
     background-color: var(--light-color);
@@ -24,7 +35,7 @@ a {
 #header {
     position: relative;
     /* background-color: rgb(180, 211, 242); */
-    padding: 16px 120px;
+    padding: 16px 100px;
     display: flex;
 }
 
@@ -79,4 +90,51 @@ a {
 .nav-menu a:hover {
     color: var(--light-color);
     background-color: var(--dark-color);
+}
+
+.megaNav {
+    background-color: var(--dark-color);
+    padding: 16px 100px;
+    padding-top: 0px;
+    color: #fff;
+}
+
+.megaNav .container {
+    /* background-color: brown; */
+    /* background: url("../assets/imgs/Girl.jfif"); */
+    background: url("../assets/imgs/pattern_stars.png");
+    background-position: 50%;
+    background-size: 10%;
+    min-height: 100px;
+}
+
+.megaNav .container .fields {
+    color: #fff;
+    display: flex;
+}
+
+.menu_content {
+    background-color: var(--dark-color);
+    flex: 4;
+}
+
+.menu_content a {
+    color: #fff
+}
+
+.menu_promo {
+    /* background-color: salmon; */
+    padding: 24px;
+    flex: 1;
+    height: 300px
+}
+
+.menu_promo .promo-clickable {
+    /* background-color: salmon; */
+    display: block;
+    width: 60%;
+}
+
+.menu_promo .promo-clickable {
+    
 }
