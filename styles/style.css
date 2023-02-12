@@ -250,3 +250,41 @@ p {
 .text-region .text-container .extra-url {
     text-decoration: underline;
 }
+
+#footer {
+    background-color: #f7f7f7;
+    padding: 40px 60px;
+    position: relative;
+}
+
+#nav-menu {
+    display: flex;
+    /* background-color: #006341; */
+}
+
+#nav-menu .nav-blocks {
+    /* background-color: chocolate; */
+    width: 250px;
+}
+
+#nav-menu .nav-blocks .title {
+    font-size: 20px;
+}
+
+#nav-menu .nav-blocks li {
+    margin: 12px 0;
+    color: #000;
+}
+
+#nav-menu .nav-blocks a {
+    color: #000;
+}
+
+#nav-menu .nav-blocks li:hover,
+#nav-menu .nav-blocks a:hover {
+    color:#bdbdbd;
+}
+
+.brand-name {
+    float: right;
+}
