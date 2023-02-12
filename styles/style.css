@@ -120,8 +120,12 @@ a:hover {
 
 .megaNav .container .fields {
     color: #fff;
-    display: flex;
+    display: none;
     flex-direction: row;
+}
+
+.megaNav .container .fields .open {
+    display: flex;
 }
 
 .menu_content {
