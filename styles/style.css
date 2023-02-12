@@ -34,9 +34,9 @@ p {
 }
 
 /* ONLY STARBUCK */
-a:hover {
+/* a:hover {
     background-color: #039145;
-}
+} */
 
 .header-container {
     background-color: var(--light-color);
@@ -62,22 +62,24 @@ a:hover {
 }
 
 .store-location-container {
-
     flex: 2;
-    text-align: center;
-    margin: auto;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.store-location span {
+.store-location > span {
     color: var(--main-color);
     font-size: 16px;
-    /* margin: auto; */
-    /* background-color: crimson; */
+    height: 24px;
+    /* display: inline-block; */
+    /* line-height: 16px; */
 }
 
-.location-marker {
-    width: 16px;
-    /* background-color: coral; */
+.store-location img {
+    height: 24px;
+    /* display: inline-block; */
+    /* line-height: 16px; */
 }
 
 .nav-menu {
@@ -136,12 +138,18 @@ a:hover {
     color: #fff
 }
 
+.menu_content a:hover {
+    background-color: #039145;
+}
+
 .menu_content .nav-blocks {
-    /* background-color: red; */
+    /* background-color: rgb(207, 146, 146); */
     display: grid;
     grid-template-columns: 6fr 6fr 5fr 5fr;
     gap: 40px;
-    padding-left: 40px;
+    padding: 0 0px 36px 40px;
+    margin: 0 8px 12px 0px;
+    border-bottom: solid 1px rgb(120, 120, 120);
 }
 
 .menu_content .nav-blocks > li > ol > li{
@@ -164,12 +172,17 @@ a:hover {
     padding-bottom: 40px;
 }
 
-.menu_promo .promo-clickable {
-    /* background-color: salmon; */
+/* .menu_promo .promo-clickable {
+    background-color: salmon;
     display: block;
     width: 60%;
+} */
+
+.menu_promo img {
+    width: 100%;
 }
 
-.menu_promo .promo-clickable p {
-
+.menu_promo a {
+    display: block;
+    width: 75%;
 }
