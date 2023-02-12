@@ -124,7 +124,7 @@ a:hover {
     flex-direction: row;
 }
 
-.megaNav .container .fields .open {
+.megaNav .container .fields.open {
     display: flex;
 }
 
