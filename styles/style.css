@@ -98,7 +98,7 @@ a:hover {
     padding-left: 12px;
 }
 
-.nav-menu a:hover {
+.nav-menu li.hovered a {
     color: var(--light-color);
     background-color: var(--dark-color);
 }
@@ -106,13 +106,7 @@ a:hover {
 .megaNav {
     background-color: var(--dark-color);
     padding: 0px 100px;
-    /* padding-top: 16px; */
     color: #fff;
-    display: none;
-}
-
-.megaNav.open {
-    display: block;
 }
 
 .megaNav .container {
