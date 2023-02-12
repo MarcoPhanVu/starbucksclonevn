@@ -30,6 +30,7 @@ p {
 .bold {
     font-weight: 800;
     font-size: 14px;
+    padding: 1px 0px;
 }
 
 /* ONLY STARBUCK */
@@ -97,36 +98,38 @@ a:hover {
     padding-left: 12px;
 }
 
-.nav-menu a:hover {
+.nav-menu li.hovered a {
     color: var(--light-color);
     background-color: var(--dark-color);
 }
 
 .megaNav {
     background-color: var(--dark-color);
-    padding: 16px 100px;
-    padding-top: 0px;
+    padding: 0px 100px;
     color: #fff;
 }
 
 .megaNav .container {
-    /* background-color: brown; */
     /* background: url("../assets/imgs/Girl.jfif"); */
     background: url("../assets/imgs/pattern_stars.png");
     background-position: 50%;
     background-size: 10%;
-    /* min-height: 100px; */
 }
 
 .megaNav .container .fields {
     color: #fff;
-    display: flex;
+    display: none;
     flex-direction: row;
+}
+
+.megaNav .container .fields.open {
+    display: flex;
 }
 
 .menu_content {
     background-color: var(--dark-color);
     flex: 5;
+    padding-top: 16px;
 }
 
 .menu_content a {
@@ -134,10 +137,15 @@ a:hover {
 }
 
 .menu_content .nav-blocks {
+    /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 6fr 6fr 5fr 5fr;
     gap: 40px;
     padding-left: 40px;
+}
+
+.menu_content .nav-blocks > li > ol > li{
+    height: 16px;
 }
 
 .menu_content .nav-blocks > li a {
