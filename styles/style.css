@@ -40,6 +40,8 @@ p {
 
 .header-container {
     background-color: var(--light-color);
+    position: relative;
+    height: 120px;
 }
 
 #header {
@@ -205,6 +207,7 @@ p {
 .page-banner {
     height: 560px;
     display: block;
+    z-index: 2;
 }
 
 .page-banner img {
