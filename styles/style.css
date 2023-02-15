@@ -33,11 +33,6 @@ p {
     padding: 1px 0px;
 }
 
-/* ONLY STARBUCK */
-/* a:hover {
-    background-color: #039145;
-} */
-
 .header-container {
     background-color: var(--light-color);
     position: relative;
@@ -75,13 +70,11 @@ p {
     font-size: 16px;
     height: 24px;
     /* display: inline-block; */
-    /* line-height: 16px; */
 }
 
 .store-location img {
     height: 24px;
     /* display: inline-block; */
-    /* line-height: 16px; */
 }
 
 .nav-menu {
@@ -130,43 +123,56 @@ p {
     display: flex;
 }
 
-.menu_content {
-    background-color: var(--dark-color);
+.menu-content {
+    /* background-color: var(--dark-color); */
     flex: 5;
-    padding-top: 16px;
 }
 
-.menu_content a {
+.menu-content a {
     color: #fff
 }
 
-.menu_content a:hover {
+.menu-content a:hover {
     background-color: #039145;
 }
 
-.menu_content .nav-blocks {
-    /* background-color: rgb(207, 146, 146); */
+.menu-content .nav-blocks {
+    background-color: var(--dark-color);
     display: grid;
     grid-template-columns: 6fr 6fr 5fr 5fr;
     gap: 40px;
-    padding: 0 0px 36px 40px;
-    margin: 0 8px 12px 0px;
+    padding: 36px 20px;
     border-bottom: solid 1px rgb(120, 120, 120);
 }
 
-.menu_content .nav-blocks > li > ol > li{
+.menu-content .nav-blocks > li > ol > li{
     height: 16px;
+    margin-bottom: 2px;
 }
 
-.menu_content .nav-blocks > li a {
+.menu-content .nav-blocks > li a {
     font-size: 12px;
 }
 
-.menu_content .nav-blocks > li a.bold {
+.menu-content .nav-blocks > li a.bold {
     font-size: 14px;
 }
 
-.menu_promo {
+.menu-suggestion-container {
+    padding: 16px;
+    background-color: var(--dark-color);
+}
+
+.menu-suggestion-title {
+    font-weight: 800;
+}
+
+.menu-suggestion-links {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.menu-promo {
     /* background-color: salmon; */
     padding: 24px;
     flex: 1;
@@ -174,17 +180,17 @@ p {
     padding-bottom: 40px;
 }
 
-/* .menu_promo .promo-clickable {
+/* .menu-promo .promo-clickable {
     background-color: salmon;
     display: block;
     width: 60%;
 } */
 
-.menu_promo img {
+.menu-promo img {
     width: 100%;
 }
 
-.menu_promo a {
+.menu-promo a {
     display: block;
     width: 75%;
 }
