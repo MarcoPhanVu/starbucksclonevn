@@ -3,7 +3,7 @@ const mainMenu = document.getElementById("main-menu")
 
 
 for (let i = 0; i < navLinks.length; i++) {
-    let tempMenu = document.getElementById(`menu_${i}`);
+    let tempMenu = document.getElementById(`menu-${i}`);
 
     navLinks[i].addEventListener("mouseover", () => {
         navLinks[i].classList.add("hovered");
