@@ -258,42 +258,88 @@ p {
 
 .text-region .text-container .extra-url {
     text-decoration: underline;
+    color: #000;
 }
 
 #footer {
-    background-color: #f7f7f7;
     padding: 40px 60px;
     position: relative;
 }
 
-#nav-menu {
+#footer .social-media {
+    background-color: #f7f7f7;
+    height: 120px;
     display: flex;
-    /* background-color: #006341; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 16px 76px;
+    margin: 32px -60px;
 }
 
-#nav-menu .nav-blocks {
+#footer .social-media a {
+    background: url(../assets/imgs/social_icons.png);background-size: auto 100%;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    /* background-color: #8ab8df; */
+}
+
+#footer .social-media a:hover {
+    opacity: 0.6;
+}
+
+#footer .social-media a.facebook {
+    background-position: 0px 0;
+    width: 40px;
+}
+
+#footer .social-media a.instagram {
+    background-position: -174px 0;
+    width: 42px;
+}
+
+#footer-nav-menu {
+    display: flex;
+    /* background-color: #006341; */
+    flex: 9;
+}
+
+#footer-nav-menu .nav-blocks {
     /* background-color: chocolate; */
     width: 250px;
 }
 
-#nav-menu .nav-blocks .title {
+#footer-nav-menu .nav-blocks .title {
     font-size: 20px;
 }
 
-#nav-menu .nav-blocks li {
+#footer-nav-menu .nav-blocks li {
     margin: 12px 0;
     color: #000;
 }
 
-#nav-menu .nav-blocks a {
+#footer-nav-menu .nav-blocks a {
     color: #000;
 }
 
-#nav-menu .nav-blocks li:hover,
-#nav-menu .nav-blocks a:hover {
-    color:#bdbdbd;
+#footer-nav-menu .nav-blocks li:hover,
+#footer-nav-menu .nav-blocks a:hover {
+    color:#971919;
+}
+
+.footer-content {
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: row;
 }
 
 .brand-name {
+    flex: 1;
+    /* background-color: #266300; */
+}
+
+.brand-name img {
     float: right;
+    height: 160px;
 }
